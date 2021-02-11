@@ -23,7 +23,9 @@ const forecast = (lat, long, callback) => {
         {
             temperature: Math.floor(body.main.temp - 273),
             humidity: body.main.humidity,
-            windspeed: body.wind.speed
+            windspeed: body.wind.speed,
+            sealevel: body.main.sea_level,
+            pressure: body.main.pressure
         })
         }
         
